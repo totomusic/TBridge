@@ -46,7 +46,10 @@
                 <li>
                     <h2 class="obtain">TBridge教程<i></i></h2>
                 </li>
-				   <li>
+		  <li>
+                    <h2 class="obtain">TBridge语言<i></i></h2>
+                </li>
+		<li>
                   <h2 class="obtain">TBridge作者<i></i></h2>
                 </li>
             </ul>
@@ -66,6 +69,7 @@
 						document.getElementById("screenshot").style.display='none';
 						document.getElementById("download").style.display='none';
 						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='none';
 					}
 				}
@@ -75,6 +79,7 @@
 						document.getElementById("screenshot").style.display='block';
 						document.getElementById("download").style.display='none';
 						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='none';
 					}
 				}
@@ -84,6 +89,7 @@
 						document.getElementById("screenshot").style.display='none';
 						document.getElementById("download").style.display='block';
 						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='none';
 					}
 				}
@@ -93,6 +99,7 @@
 						document.getElementById("screenshot").style.display='none';
 						document.getElementById("download").style.display='none';
 						document.getElementById("tutorial").style.display='block';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='none';
 					}
 				}	
@@ -102,11 +109,22 @@
 						document.getElementById("screenshot").style.display='none';
 						document.getElementById("download").style.display='none';
 						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='block';
+						document.getElementById("Musician").style.display='none';
+					}
+				}
+				if(i==5) {
+					list[i].onclick = function(){
+						document.getElementById("introduction").style.display='none';
+						document.getElementById("screenshot").style.display='none';
+						document.getElementById("download").style.display='none';
+						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='block';
 					}
 				}					
 			}
-		</script>
+</script>
 
 
 
@@ -166,6 +184,13 @@
 	<p style="text-align:center" onclick="window.open('TBridgeHelpEN.html')">TBridge User Guide</p><br>
 	
 
+</div>
+<div id="Language"  style="display: none;background-color:rgb(54,58,75);color:white">
+	<br><h1 style="text-align:center"><br><b>TBridge语言</b></h1><br><br>
+	<p>切换语言：TBridge应用程序->菜单栏->语言->选择想要使用的语言</p><br>
+	<p>添加语言：找到"TBridge\TBridgeData\Language.ini"，打开进行编辑，如下图，只需要在Language.ini文件里新添加一个节点，以[语言名称]命名，然后将复制所有的汉字内容，将"="右侧的文字改成相应的语言，保存后重启TBridge即可自动在语言栏添加新语言选项</p><br>
+	<img id="img"  salign="middle" class='min' src ="pic/screenshot/addlanguage.png" border =0> <br><br>
+	<p>如果你有兴趣和能力帮助TBridge添加多国语言，请将添加语言后的Language.ini通过电子邮件或者交流群反馈给我</p><br>
 </div>
 <div id="Musician"  style="display: none;text-align:center;background-color:rgb(54,58,75);color:white">
 	<p><br><h1 style="text-align:center"><br><b>作者信息</b></h1><br><br>
