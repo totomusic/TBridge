@@ -110,7 +110,7 @@
 
 
 
-<div id="introduction"  style="display: block;background-color:rgb(54,58,75);color:white">
+<div id="introduction"  style="display: none;background-color:rgb(54,58,75);color:white">
  <br><h1 style="text-align:center"><br><b>TBridge简介</b></h1><br><br>
 	
 
@@ -351,7 +351,15 @@
            }
          }
    </script>
-
+<script>
+	window.onload=function(){
+		document.getElementById("introduction").style.display='block';
+		document.getElementById("screenshot").style.display='none';
+		document.getElementById("download").style.display='none';
+		document.getElementById("tutorial").style.display='none';
+		document.getElementById("Musician").style.display='none';
+	}
+</script>
 
 </html>
 
