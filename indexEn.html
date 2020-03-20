@@ -45,6 +45,9 @@
                 <li>
                     <h2 class="obtain">Tutorial<i></i></h2>
                 </li>
+		                    <li>
+                    <h2 class="obtain">Language<i></i></h2>
+                </li>
 				   <li>
                   <h2 class="obtain">Developers<i></i></h2>
                 </li>
@@ -54,7 +57,7 @@
 </div>
 
 <!--<script src="js/menu.js"></script> <!--控制js-->
-    <script type="text/javascript">
+     <script type="text/javascript">
             //获取所有li的节点
             var list =  document.getElementsByTagName("li");
             //给每个li绑定事件
@@ -65,6 +68,7 @@
 						document.getElementById("screenshot").style.display='none';
 						document.getElementById("download").style.display='none';
 						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='none';
 					}
 				}
@@ -74,6 +78,7 @@
 						document.getElementById("screenshot").style.display='block';
 						document.getElementById("download").style.display='none';
 						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='none';
 					}
 				}
@@ -83,6 +88,7 @@
 						document.getElementById("screenshot").style.display='none';
 						document.getElementById("download").style.display='block';
 						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='none';
 					}
 				}
@@ -92,6 +98,7 @@
 						document.getElementById("screenshot").style.display='none';
 						document.getElementById("download").style.display='none';
 						document.getElementById("tutorial").style.display='block';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='none';
 					}
 				}	
@@ -101,11 +108,22 @@
 						document.getElementById("screenshot").style.display='none';
 						document.getElementById("download").style.display='none';
 						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='block';
+						document.getElementById("Musician").style.display='none';
+					}
+				}
+				if(i==5) {
+					list[i].onclick = function(){
+						document.getElementById("introduction").style.display='none';
+						document.getElementById("screenshot").style.display='none';
+						document.getElementById("download").style.display='none';
+						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Language").style.display='none';
 						document.getElementById("Musician").style.display='block';
 					}
 				}					
 			}
-		</script>
+</script>
 
 
 
@@ -170,6 +188,13 @@
 	<p style="text-align:center" onclick="window.open('TBridgeHelpEN.html')">TBridge User Guide</p><br>
 	
 
+</div>
+<div id="Language"  style="display: none;background-color:rgb(54,58,75);color:white">
+	<br><h1 style="text-align:center"><br><b>Language</b></h1><br><br>
+	<p>Switch language: TBridge application->menu bar->Language->select the language you want to use</p><br>
+	<p>Add a language: find "TBridge\TBridgeData\Language.ini", open it for editing, as shown below, just add a new node in the Language.ini file, name it [your language], and then copy all the Chinese character content, Change the text on the "=" right to the corresponding language, save it and restart, TBridge will automatically add a new language option in the Language bar.</p><br>
+	<img id="img"  align="middle" class='min' src ="pic/screenshot/addlanguage.png" border =0> <br><br>
+	<p>If you are interested and able to help TBridge add multiple languages, please send Language.ini after adding the language to me via Email or totomusic Tencent Group. </p><br>
 </div>
 <div id="Musician"  style="display: none;text-align:center;background-color:rgb(54,58,75);color:white">
 	<p><br><h1 style="text-align:center"><br><b>Developers</b></h1><br><br>
@@ -237,6 +262,7 @@
 		document.getElementById("screenshot").style.display='none';
 		document.getElementById("download").style.display='none';
 		document.getElementById("tutorial").style.display='none';
+		document.getElementById("Language").style.display='none';
 		document.getElementById("Musician").style.display='none';
 	}
 </script>
