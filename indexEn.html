@@ -1,0 +1,243 @@
+﻿<!doctype html>
+<html lang="en" style="background-color:rgb(54,58,75)">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>TBridge</title>
+
+<script src="js/adapter.js"></script> <!--rem适配js-->
+<link rel="stylesheet" href="css/base.css"> <!--初始化文件-->
+<link rel="stylesheet" href="css/menu.css"> <!--主样式-->
+
+<style>
+	.max {
+		width: auto;
+		height: auto;
+	}
+	.min {
+		width: 300px;
+		height: auto;
+	}
+</style>
+
+<body>
+	
+<div id="menu">
+
+    <!--显示菜单-->
+    <div id="open">
+        <div class="navH">
+            TBridge
+        </div>
+        <div class="navBox">
+            <ul>
+                <li>
+                    <h2 class="obtain">Introduction<i></i></h2>
+                </li>
+                <li>
+                    <h2 class="obtain">Screenshot<i></i></h2>
+                </li>
+                <li>
+                    <h2 class="obtain">Download<i></i></h2>
+                </li>
+                <li>
+                    <h2 class="obtain">Tutorial<i></i></h2>
+                </li>
+				   <li>
+                  <h2 class="obtain">Developers<i></i></h2>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--<script src="js/menu.js"></script> <!--控制js-->
+    <script type="text/javascript">
+            //获取所有li的节点
+            var list =  document.getElementsByTagName("li");
+            //给每个li绑定事件
+            for(var i = 0;i<list.length;i++){
+				if(i==0) {
+					list[i].onclick = function(){
+						document.getElementById("introduction").style.display='block';
+						document.getElementById("screenshot").style.display='none';
+						document.getElementById("download").style.display='none';
+						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Musician").style.display='none';
+					}
+				}
+				if(i==1) {
+					list[i].onclick = function(){
+							document.getElementById("introduction").style.display='none';
+						document.getElementById("screenshot").style.display='block';
+						document.getElementById("download").style.display='none';
+						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Musician").style.display='none';
+					}
+				}
+				if(i==2) {
+					list[i].onclick = function(){
+						document.getElementById("introduction").style.display='none';
+						document.getElementById("screenshot").style.display='none';
+						document.getElementById("download").style.display='block';
+						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Musician").style.display='none';
+					}
+				}
+				if(i==3) {
+					list[i].onclick = function(){
+						document.getElementById("introduction").style.display='none';
+						document.getElementById("screenshot").style.display='none';
+						document.getElementById("download").style.display='none';
+						document.getElementById("tutorial").style.display='block';
+						document.getElementById("Musician").style.display='none';
+					}
+				}	
+				if(i==4) {
+					list[i].onclick = function(){
+						document.getElementById("introduction").style.display='none';
+						document.getElementById("screenshot").style.display='none';
+						document.getElementById("download").style.display='none';
+						document.getElementById("tutorial").style.display='none';
+						document.getElementById("Musician").style.display='block';
+					}
+				}					
+			}
+			window.onload=function(){
+				document.getElementById("introduction").style.display='block';
+				document.getElementById("screenshot").style.display='none';
+				document.getElementById("download").style.display='none';
+				document.getElementById("tutorial").style.display='none';
+				document.getElementById("Musician").style.display='none';
+			}
+		</script>
+
+
+
+<div id="introduction"  style="display: none;background-color:rgb(54,58,75);color:white">
+ <br><h1 style="text-align:center"><br><b>Introduction</b></h1><br><br>
+	
+
+ <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTBridge is a free VST bridge based on NetVST. You can easily run 32-bit VST in a 64-bit DAW by TBridge. <br><br>
+
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp TBridge is a free software. You can use it freely and apply it to commercial or non-commercial use, but you need to ensure that you accept the following constraints:<br>
+
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 1. The commercial use permitted in this agreement refers only to the commercial distribution of music works produced through TBridge, not to sell the TBridge software itself directly or indirectly, including but not limited to selling as part of third-party software.<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 2. TBridge is a function extension based on NetVST. When you start using TBridge, please make sure you have understood the relevant terms of NetVST. <br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 3. This software is free software, and any risks arising from the use of this software are borne by the user himself. <br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 4. TBridge developers reserve the right to interpret the above terms. <br><br>
+	<p style="text-align:center" onclick="window.open('https://totomusic.github.io/TBridge/')"><b>(点我 - TBridge中文主页)</b></p><br><br>
+	
+	
+</p>
+<div id="PicContent"  style="text-align:center">
+	
+<img id="img1" src ="pic/introduction/1.png" border =0>
+<img id="img1" src ="pic/introduction/2.png" width=343 height=273 border =0>
+</div>
+
+
+</div>
+<div id="screenshot" align="center" style="display: none;background-color:rgb(54,58,75);color:white">
+	<p><br><h1 style="text-align:center"><br><b>Screenshot（Click to resize）</b></h1><br><br>
+		<br><p style="text-align:center">Pic 1: Quickly insert plugin through the VST Browser&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPic 2：Insert plug-ins in batches as a project &nbsp&nbsp&nbsp&nbsp&nbsp&nbspPic 3：Two convenient plug-in connection methods</p><br><br>
+		 <img id="img" class='min' src ="pic/screenshot/insertplugin.gif"  border =0>
+		<img id="img" class='min' src ="pic/screenshot/openproject.gif"  border =0>
+		<img id="img" class='min' src ="pic/screenshot/connect.gif" border =0> <br>
+		
+		<!-- <p style="text-align:center"><b>以工程的形式批量打开插件</b></p>
+		<p style="text-align:center"><b>两种便捷的插件连接方式</b></p> -->
+
+</p>
+</div>
+<div id="download"  style="display: none;background-color:rgb(54,58,75);color:white">
+	<p><br><h1 style="text-align:center"><br><b>Download</b></h1>
+	<br>
+	<p style="text-align:center">【Current version 1.0.0.2】Click the text below to jump to the corresponding link to download</p>
+	<br>
+	<p style="text-align:center" onclick="window.open('https://github.com/totomusic/TBridge/releases/')">Download link one：Jump to github download</p>
+	<p style="text-align:center" onclick="window.open('https://www.lanzous.com/b00zbpkre')">Download link two：蓝奏云（Password:totomusic）</p><br>
+	
+	<!--
+	<div style="text-align:center">
+	<img  src ="pic/download/1.png" width=600 height=400 border =0>
+	<img  src ="pic/download/2.png" width=342 height=264 border =0>
+	</div>
+	-->
+	</p>
+</div>
+<div id="tutorial"  style="display: none;background-color:rgb(54,58,75);color:white">
+	<br><h1 style="text-align:center"><br><b>Tutorial</b></h1><br>
+	<p style="text-align:center">【Click on the text below to jump to the corresponding tutorial】</p>
+	<br>
+	<p style="text-align:center" onclick="window.open('https://www.bilibili.com/video/av97444815')">bilibili chinese video tutorial</p>
+	<p style="text-align:center" onclick="window.open('tutorial/TBridgeHelpCN.html')">TBridge中文用户手册</p>
+	<p style="text-align:center" onclick="window.open('tutorial/TBridgeHelpEN.html')">TBridge user guide</p><br>
+	
+
+</div>
+<div id="Musician"  style="text-align:center;background-color:rgb(54,58,75);color:white">
+	<p><br><h1 style="text-align:center"><br><b>Developers</b></h1><br><br>
+		
+		Love music, love computer science, love researching various software <br> <br>
+		Sina Weibo &nbsp|&nbsp bilibili&nbsp |&nbsp Netease cloud music @番茄西西西红柿<br> <br>
+		Email totomusic@qq.com
+		&nbsp&nbsp  totomusic Tencent Group 773596077<br>&nbsp&nbsp&nbsp&nbsp  <br>
+<br>
+
+	
+	<div style="text-align:center">
+	【Click the icon to jump】<br><br>
+	Original songs (Netease Cloud Music)&nbsp&nbsp&nbsp&nbsp Cover songs (changba)&nbsp&nbsp&nbsp&nbsp Sina Weibo homepage &nbsp&nbsp&nbsp&nbsp bilibili homepage <br>
+	&nbsp&nbsp&nbsp&nbsp
+	<br>
+
+	&nbsp&nbsp&nbsp&nbsp<a style="color:white" target="_blank" href="https://music.163.com/#/user/home?id=59048437"><img  id = 'img1' src ="pic/pes/2.png" alt="Netease Musician homepage" border =0></a>
+	&nbsp&nbsp&nbsp&nbsp<a style="color:white" target="_blank" href="http://changba.com/u/104271256"><img  id = 'img1' src ="pic/pes/changba.png"   alt="changba homepage" border =0></a>	
+	&nbsp&nbsp&nbsp&nbsp<a style="color:white" target="_blank" href="https://weibo.com/totomusic"><img  id = 'img1' src ="pic/pes/weibo.png"  alt="Sina Weibo homepage" border =0></a>
+	&nbsp&nbsp&nbsp&nbsp<a style="color:white" target="_blank" href="https://space.bilibili.com/8212342"><img  id = 'img1' src ="pic/pes/3.png"  alt="bilibili homepage" border =0></a>
+</div>
+	</p>
+</div>
+
+
+</body>
+
+
+<script>
+    let objs = document.getElementsByTagName("img");
+         for(let i=0;i<objs.length;i++)
+         {
+           objs[i].onclick=function()
+           {
+			if (typeof this.naturalWidth == "undefined") {
+	　		　// IE 6/7/8
+			　　var i = new Image();
+	　		　i.src = this.src;
+	　		　var rw = i.width;
+			　　var rh = i.height;
+			}
+			else {
+	　		　// HTML5 browsers
+	　		　var rw = this.naturalWidth;
+	　		　var rh = this.naturalHeight;
+			}
+			   
+               if(this.className=="min" && this.getAttribute("id")!="img1")
+               {
+				this.setAttribute("class","max");
+				this.wdith=rw;
+				this.height=rh;
+               }
+               else if(this.getAttribute("id")!="img1")
+               {
+                this.setAttribute("class","min");
+               }
+           }
+         }
+   </script>
+
+</html>
+
